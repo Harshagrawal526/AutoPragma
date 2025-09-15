@@ -30,7 +30,7 @@ Follow these steps to set up the local environment.
 
 ```bash
 git clone https://github.com/Harshagrawal526/AutoPragma
-cd ai_auto_parallelizer
+cd AutoPragma
 ```
 
 ### 2. Create a Virtual Environment
