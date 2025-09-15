@@ -29,7 +29,7 @@ Follow these steps to set up the local environment.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Harshagrawal526/AutoPragma
 cd ai_auto_parallelizer
 ```
 
