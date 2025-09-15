@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Large files and temporary outputs
+results/checkpoint-*/
+results/eval_output/
+results/eval_output_*/
+results/logs/
+results/best_model/
+
+# IDE specific
+.idea/
+.vscode/
