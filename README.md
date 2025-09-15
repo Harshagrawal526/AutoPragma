@@ -13,7 +13,7 @@ ai_auto_parallelizer/
 │   └── ...
 ├── src/                  # All Python source code
 │   ├── train.py          # Script to fine-tune the model
-│   ├── evaluate.py       # Script to evaluate the model on the main test set
+│   ├── eval.py       # Script to evaluate the model on the main test set
 │   ├── run_benchmark.py  # Script to evaluate on benchmark datasets
 │   └── run_demo.py       # A simple demo with example code snippets
 ├── results/              # Output directory for models and plots (ignored by git)
@@ -44,7 +44,7 @@ source venv/bin/activate
 
 # For Windows
 python -m venv venv
-.\venv\Scripts\activate
+.\venv\Scripts\activate.ps1
 ```
 
 ### 3. Install Dependencies
@@ -73,7 +73,7 @@ This process may take a while depending on your hardware (a GPU is strongly reco
 Once training is complete, you can evaluate the model's performance on the main test set. This will print metrics (Accuracy, Precision, Recall, F1-Score) and save a confusion matrix to `results/confusion_matrix.png`.
 
 ```bash
-python src/evaluate.py
+python src/eval.py
 ```
 
 ### 3. Run Benchmark Evaluations

@@ -1,5 +1,5 @@
 import os
-import evaluate
+import eval
 import numpy as np
 from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer
@@ -40,9 +40,9 @@ tokenized_val = processed_dataset['validation'].map(preprocess_function, batched
 
 # 5. Define Metrics for Evaluation
 print("Defining metrics...")
-accuracy_metric = evaluate.load("accuracy")
-precision_metric = evaluate.load("precision")
-recall_metric = evaluate.load("recall")
+accuracy_metric = eval.load("accuracy")
+precision_metric = eval.load("precision")
+recall_metric = eval.load("recall")
 
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
